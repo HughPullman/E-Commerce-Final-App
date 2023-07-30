@@ -1,0 +1,13 @@
+.app{
+    @font-face {
+        font-family: "Prompt";
+        src: local("Prompt-Regular"),
+        url("./fonts/Prompt-Regular.ttf") format("truetype");
+    }
+    font-family: "Prompt";
+
+    .link{
+        color: inherit;
+        text-decoration: none;
+    }
+}
