@@ -8,6 +8,8 @@ import Products from "./pages/Products/Products";
 import Product from "./pages/Product/Product";
 import Footer from "./components/Footer/Footer";
 import Navbar from "./components/Navbar/Navbar";
+import Login from "./components/Login/Login"
+import CreateAccount from "./components/CreateAccount/CreateAccount";
 import "./app.scss"
 import "./fonts/Prompt-Regular.ttf"
 
@@ -26,20 +28,29 @@ const Layout = () => {
 const router = createBrowserRouter([
   {
     path:"/",
+    basename: "/hughstore/",
     element:<Layout/>,
     children:[
       {
-      path: "/",
+      path: "/hughstore/",
       element: <Home />
       },
       {
-        path:"/products/:id",
+        path:"/hughstore/products/:id",
         element:<Products />
       },
       {
-        path:"/product/:id",
+        path:"/hughstore/product/:id",
         element: <Product />
       },
+      {
+        path:"/hughstore/login-page",
+        element: <Login/>
+      },
+      {
+        path:"/hughstore/create-account",
+        element: <CreateAccount/>
+      }
     ]
   }  
 ]);

@@ -1,44 +1,13 @@
 import React from 'react'
 import "./FeaturedProducts.scss"
 import Card from '../Card/Card'
+import useFetch from '../../hooks/useFetch'
+
 
 const FeaturedProducts = ({type}) => {
 
-    const data = [
-        {
-            id: 1,
-            img:"https://images.pexels.com/photos/17670523/pexels-photo-17670523/free-photo-of-women-posing-on-sofa.jpeg?auto=compress&cs=tinysrgb&w=1600",
-            img2: "https://images.pexels.com/photos/17670514/pexels-photo-17670514/free-photo-of-women-posing-on-bed.jpeg?auto=compress&cs=tinysrgb&w=1600",
-            title:"Black lace Crop-top",
-            isNew: true,
-            oldPrice: 20,
-            price: 12,
-        },
-        {
-            id: 2,
-            img:"https://images.pexels.com/photos/3622614/pexels-photo-3622614.jpeg?auto=compress&cs=tinysrgb&w=1600",
-            title:"Yellow Tracksuit",
-            isNew: true,
-            oldPrice: 50,
-            price: 40,
-        },
-        {
-            id: 3,
-            img:"https://images.pexels.com/photos/1926769/pexels-photo-1926769.jpeg?auto=compress&cs=tinysrgb&w=1600",
-            title:"Cream Cotton Oversized Shirt",
-            isNew: false,
-            oldPrice: 25,
-            price: 12,
-        },
-        {
-            id: 4,
-            img:"https://images.pexels.com/photos/1043474/pexels-photo-1043474.jpeg?auto=compress&cs=tinysrgb&w=1600",
-            title:"Cream Cotton Oversized Shirt",
-            isNew: false,
-            oldPrice: 22,
-            price: 15,
-        },
-    ]
+    const {data, loading, error} = useFetch(`/products?type=${type}`);
+   
 
     return(
         <div className="featuredProducts">
@@ -57,9 +26,9 @@ const FeaturedProducts = ({type}) => {
                 </p>
             </div>
             <div className="bottom">
-                {data.map(item =>(
-                    <Card item={item} key={item.id}/>
-                ))}
+                {error ? "Something went wrong!" :(loading ? "loading" : data.map(item =>(
+                    <Card item={item} key={item._id}/>
+                )))}
             </div>
         </div>      
     )

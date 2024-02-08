@@ -9,13 +9,13 @@ const Categories = () => {
                 <div className="row">
                     <img src="https://images.pexels.com/photos/852860/pexels-photo-852860.jpeg?auto=compress&cs=tinysrgb&w=1600" alt="" />
                     <button>
-                        <Link className='link' to="products/1">Sale</Link>
+                        <Link className='link' to="/hughstore/products/1">Sale</Link>
                     </button>
                 </div>
                 <div className="row">
                     <img src="https://images.pexels.com/photos/1040173/pexels-photo-1040173.jpeg?auto=compress&cs=tinysrgb&w=1600" alt="" />
                     <button>
-                        <Link className='link' to="products/1">Accessories</Link>
+                        <Link className='link' to="/hughstore/products/1">Accessories</Link>
                     </button>
                 </div>
             </div>
@@ -23,7 +23,7 @@ const Categories = () => {
                 <div className="row">
                     <img src="https://images.pexels.com/photos/794062/pexels-photo-794062.jpeg?auto=compress&cs=tinysrgb&w=1600" alt="" />
                     <button>
-                        <Link className='link' to="products/1">New Season</Link>
+                        <Link className='link' to="/hughstore/products/1">New Season</Link>
                     </button>
                 </div>
             </div>
@@ -33,7 +33,7 @@ const Categories = () => {
                         <div className="row">
                             <img src="https://images.pexels.com/photos/1040945/pexels-photo-1040945.jpeg?auto=compress&cs=tinysrgb&w=1600" alt="" />
                         <button>
-                        <Link className='link' to="products/1">Men</Link>
+                        <Link className='link' to="/hughstore/products/1">Men</Link>
                         </button>
                         </div>
                     </div>
@@ -41,7 +41,7 @@ const Categories = () => {
                         <div className="row">
                         <img src="https://images.pexels.com/photos/17676251/pexels-photo-17676251/free-photo-of-young-woman-standing-in-front-of-an-old-building.jpeg?auto=compress&cs=tinysrgb&w=1600" alt="" />
                         <button>
-                        <Link className='link' to="products/1">Women</Link>
+                        <Link className='link' to="/hughstore/products/1">Women</Link>
                     </button>
                         </div>
                     </div>
@@ -49,7 +49,7 @@ const Categories = () => {
                 <div className="row">
                     <img src="https://images.pexels.com/photos/1800055/pexels-photo-1800055.jpeg?auto=compress&cs=tinysrgb&w=1600" alt="" />
                     <button>
-                        <Link className='link' to="products/1">Shoes</Link>
+                        <Link className='link' to="/hughstore/products/1">Shoes</Link>
                     </button>
                 </div>
             </div>

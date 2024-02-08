@@ -52,7 +52,7 @@ const Footer = () => {
                     <span className='copyright'>© Copyright 2023. All Rights Reserved</span>
                 </div>
                 <div className="right">
-                    <img src='/img/payment.png' alt='' />
+                    <img src='/hughstore/img/payment.png' alt='' />
                 </div>
             </div>
         </div>
